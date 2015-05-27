@@ -26,12 +26,14 @@
 } @media only screen and (max-width: 550px){
     .article img {
       max-width: none !important;
+      margin-bottom: 0 !important;
     }
     .article .article-image{
       width: 100% !important;
       float: none !important;
       height:auto;
       margin-right: 0 !important;
+      margin-bottom: 5px !important;
     }
     .article p, .article h4{
       margin-left: 0 !important;
@@ -88,8 +90,12 @@
       padding:0;
       width:100% !important;
     }
+    .article-list {
+      margin-top: 40px;
+    }
     .article {
       clear: both;
+      margin-bottom: 40px;
     }
     .article img {
       width: 100% !important;
@@ -98,7 +104,7 @@
       width: 175px;
       float: left;
       margin-right: 10px;
-      margin-bottom: 10px;
+      margin-bottom: 40px;
     }
     .article h4, .article p {
       margin-left: 185px;
@@ -362,7 +368,7 @@
                                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
                                                       </div>
-                                                      <div mc:variant="Article List">
+                                                      <div class="article-list" mc:variant="Article List">
                                                         <div class="article" mc:repeatable>
                                                           <div class="article-image">
                                                             <img mc:edit="article_image" src="https://gallery.mailchimp.com/e5898ac1e68db70ce0dfefa88/images/c4dd701d-fccd-4346-88b8-6320f72d2476.jpg" />
