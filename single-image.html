@@ -24,6 +24,20 @@
     }
 
 } @media only screen and (max-width: 550px){
+    .article img {
+      max-width: none !important;
+    }
+    .article .article-image{
+      width: 100% !important;
+      float: none !important;
+      height:auto;
+      margin-right: 0 !important;
+    }
+    .article p, .article h4{
+      margin-left: 0 !important;
+    }
+
+} @media only screen and (max-width: 550px){
     #templateBody>tbody>tr>td{
       padding:30px !important;
     }
@@ -73,6 +87,31 @@
       margin:20px 0 0 0;
       padding:0;
       width:100% !important;
+    }
+    .article {
+      clear: both;
+    }
+    .article img {
+      width: 100% !important;
+    }
+    .article .article-image {
+      width: 175px;
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    .article h4, .article p {
+      margin-left: 185px;
+    }
+    .article p {
+      margin-top: 0;
+    }
+    .article a {
+      font-weight: inherit !important;
+    }
+    .clear {
+      clear: both;
+      height: 0;
     }
   /*
   @tab Page
@@ -158,12 +197,12 @@
       /*@editable*/color:#202020;
       display:block;
       /*@editable*/font-family:'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
-      /*@editable*/font-size:22px;
+      /*@editable*/font-size:16px;
       /*@editable*/font-weight:bold;
       /*@editable*/line-height:1.3em;
       margin-top:0;
       margin-right:0;
-      margin-bottom:10px;
+      margin-bottom:4px;
       margin-left:0;
       /*@editable*/text-align:left;
     }
@@ -322,6 +361,18 @@
                                                         <p>Header photo should be 720px wide, any height. You can hide the email title above if you like. Use option-Enter to create new paragraphs as opposed to line-breaks. When pasting from other applications such as Microsoft Word use Edit --> Paste and Match Style from the Chrome menu bar.</p>
                                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                                                      </div>
+                                                      <div mc:variant="Article List">
+                                                        <div class="article" mc:repeatable>
+                                                          <div class="article-image">
+                                                            <img mc:edit="article_image" src="https://gallery.mailchimp.com/e5898ac1e68db70ce0dfefa88/images/c4dd701d-fccd-4346-88b8-6320f72d2476.jpg" />
+                                                          </div>
+                                                          <h4 mc:edit="article_title"><a href="#">Edit this title's link</a></h4>
+                                                          <p mc:edit="article_content">You can hide this or add additional articles using the buttons below. <a href="#">Read More.</a></p>
+                                                        </div>
+                                                        <div class="clear"></div>
+                                                      <div>
+                                                      <div mc:edit="footer">
                                                         <p>Sincerely</p>
                                                         <p>MacGyver</p>
                                                       </div>
